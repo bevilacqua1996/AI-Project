@@ -1,0 +1,19 @@
+spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      embedding:
+        model: nomic-embed-text
+      chat:
+        model: mistral
+        options:
+          model: mistral
+    vectorstore:
+      qdrant:
+        host: localhost   # URL do seu Qdrant           # se houver autenticação
+        port: 6334         # porta do Qdrant    # porta gRPC do Qdrant
+        collection-name: my_collection
+
+clickup:
+  token:
+  workspaceId: 
